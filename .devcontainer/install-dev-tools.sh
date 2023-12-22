@@ -18,7 +18,7 @@ sudo apt-get install -y libcairo2-dev pkg-config python3-dev
 # Why version 12, when TF requires Cuda 11.8? 
 # Could not load library libcublasLt.so.12. Error: libcublasLt.so.12: cannot open shared object file: No such file or directory
 # Aborted (core dumped)
-sudo apt-get install libcublas-12-0
+# sudo apt-get install -y libcublas-12-0
 
 # install Python packages
 python3 -m pip install --upgrade pip
