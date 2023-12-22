@@ -11,6 +11,15 @@ Dependencies:
 - torchvision 0.14.1 ([install instructions](https://pytorch.org/get-started/locally/))
 - matplotlib 3.7.1 to generate plots for model inspection
 
+
+```pip3 install torch torchvision torchaudio```
+https://stackoverflow.com/questions/60912744/install-pytorch-from-requirements-txt
+pip install -r requirements.txt
+python -m pip install --upgrade pip
+
+WARNING: The scripts pip, pip3 and pip3.10 are installed in '/usr/local/python/3.10.13/bin' which is not on PATH.
+  Consider adding this directory to PATH or, if you prefer to suppress this warning, use --no-warn-script-location.
+
 You can find the implementation in the `vit.py` file. The main class is `ViTForImageClassification`, which contains the embedding layer, the transformer encoder, and the classification head. All of the modules are heavily commented to make it easier to understand.
 
 The model config is defined as a python dictionary in `train.py`, you can experiment with different hyperparameters there. Training parameters can be passed using the command line. For example, to train the model for 10 epochs with a batch size of 32, you can run:
