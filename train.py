@@ -129,6 +129,7 @@ def main():
     epochs = args.epochs
     lr = args.lr
     device = args.device
+    print(f"device = {device}")
     save_model_every_n_epochs = args.save_model_every
     # Load the CIFAR10 dataset
     trainloader, testloader, _ = prepare_data(batch_size=batch_size)
