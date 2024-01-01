@@ -15,6 +15,8 @@ sudo apt-get upgrade -y
 # sudo apt-get install libcairo2-dev
 sudo apt-get install -y libcairo2-dev pkg-config python3-dev
 
+sudo apt install -y nodejs
+
 # Why version 12, when TF requires Cuda 11.8? 
 # Could not load library libcublasLt.so.12. Error: libcublasLt.so.12: cannot open shared object file: No such file or directory
 # Aborted (core dumped)

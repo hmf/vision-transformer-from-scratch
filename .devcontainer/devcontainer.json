@@ -31,14 +31,19 @@
 		// https://github.com/devcontainers/features/tree/main/src/nvidia-cuda
 		// https://github.com/devcontainers/features/blob/main/src/nvidia-cuda/devcontainer-feature.json
 		"ghcr.io/devcontainers/features/nvidia-cuda:1": {
-			// Original
-			"cudaVersion": "11.7",
-			"cudnnVersion": "8.5.0.96", // 11.7
+			// Original - torch 1.13.1 + vision 0.14.1
+			// "cudaVersion": "11.7",
+			// "cudnnVersion": "8.5.0.96", // 11.7
+			// Torch 2.1.2 + vision 0.16
+			// https://hub.docker.com/layers/pytorch/pytorch/2.1.0-cuda12.1-cudnn8-devel/images/sha256-fe174e1e257d29976c99ebe9832d9bb20bd9706ea8eff1482cc9af261998c48d
+			// https://gist.github.com/Birch-san/211f31f8d901dadd1025398fa1a603b8
+			"cudaVersion": "12.1",
+			"cudnnVersion": "8.9.0.131",
 			//"cudaVersion": "11.8",
 			//"cudaVersion": "12.2",
 			"installCudnn": true,
 			"installCudnnDev": true,
-			//"cudnnVersion": "8.9.5.29",
+			//"cudnnVersion": "8.9.5.29",  // 12.2
 			//"cudnnVersion": "8.6.0.163", // 11.8
 			"installToolkit": true,
 			"installNvtx": true
