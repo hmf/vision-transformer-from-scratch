@@ -26,6 +26,7 @@ The model config is defined as a python dictionary in `train.py`, you can experi
 
 ```bash
 python train.py --exp-name vit-with-10-epochs --epochs 10 --batch-size 32
+nohup python train.py --exp-name vit-with-200-epochs --epochs 200 --batch-size 32 > tmp.txt 2>&1 &
 ```
 
 Please have a look at the `train.py` file for more details.
